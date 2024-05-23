@@ -1,0 +1,55 @@
+body {
+    background: url("images/bodyBackround.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container-blackJack {
+    width: 75%;
+    margin: 0 auto;
+    border: 1px solid black;
+    text-align: center;
+}
+
+#row-1, #row-2, #row-3 {
+    display: flex;
+    border: 1px solid black;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+#row-1::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url("images/tableBackground.png") center no-repeat;
+    background-size: cover;
+}
+
+#row-1 {
+    position: relative;
+}
+
+#row-1 div {
+    border: 1px solid black;
+    color: white;
+    flex: 1;
+    height: 350px;
+}
+
+#row-1 div img {
+    width: 18%;
+    margin: 10px;
+}
+
+table th, td {
+    padding: 5px;
+    border: 1px solid black;
+}
