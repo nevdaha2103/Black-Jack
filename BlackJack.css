@@ -29,7 +29,7 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
-    background: url("images/tableBackground.png") center no-repeat;
+    background: url("images/table.jpg") center no-repeat;
     background-size: cover;
 }
 
@@ -51,5 +51,22 @@ body {
 
 table th, td {
     padding: 5px;
+    border: 1px solid black;
+}
+
+.transparent-table {
+    background-color: rgba(255, 255, 255, 0.5); 
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.transparent-table th,
+.transparent-table td {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.transparent-table th[colspan="3"] {
+    background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid black;
 }
