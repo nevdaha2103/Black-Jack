@@ -87,19 +87,10 @@ function dealbtn() {
 
         document.querySelector('#status').textContent = "Let's Play!";
         document.querySelector('#status').style.color = 'black';
-
-    
-        let cardObject1 = randomCard();
-        let cardObject2 = randomCard();
-        showCard(DEALER, cardObject1, true); 
-        updateScore(DEALER, cardObject1);
-
-        setTimeout(() => { 
-            showCard(DEALER, cardObject2); 
-            updateScore(DEALER, cardObject2);
-        }, 1000);
     }
 }
+
+
 function showCard(activePlayer, cardObject, isFaceDown = false) {
     if (activePlayer['score'] <= 21) {
         hitSound.play();
